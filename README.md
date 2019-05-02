@@ -4,6 +4,7 @@ To make this work:
 pip install pdfkit,bs4,requests 
 
 run with - py pdf.py
+
 if you are on windows you need to install
 https://wkhtmltopdf.org/downloads.html
 then change your PATH env 
