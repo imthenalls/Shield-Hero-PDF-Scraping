@@ -3,7 +3,7 @@ import pdfkit
 import requests
 import bs4
 import os
-
+#change path to whatever you want, its where all the pdfs will be saved
 path = "/Shield Hero"
 try:  
     os.mkdir(path)
@@ -26,7 +26,7 @@ Shield = "Shield Hero "
 chapter = 'Chapter'
 chapterNum = 1;
 pdf = '.pdf'
-while(i<=16):
+while(startChapter <= endChapter):
 	chapterName = Shield + chapter + " " +str(chapterNum) + pdf
 	print(elems[i].get('href'), " " ,i," ",chapterName)
 	pdfkit.from_url(elems[i].get('href'),chapterName)
